@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Display{% endblock %}
+{% block style %}{% endblock %}
+{% block content %}
+<div class="container mb-3">
+    <div class="card bg-primary">
+        <div class="card-header bg-warning">
+            <h3>Details of Users</h3>
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis culpa cupiditate dolore exercitationem fugit, hic laudantium, nobis numquam pariatur quisquam rem sequi sint temporibus vitae. A animi, aspernatur assumenda blanditiis cupiditate fugit magnam molestiae odit quam quia reprehenderit voluptates!</p>
+        </div>
+    </div>
+</div>
+ <h2 class="display-3 text-success text-center mb-3">Python Users</h2>
+        <div class="container text-center">
+            <table class="table table-primary">
+                <thead class="thead-light">
+                <tr>
+                    <th>
+                        S.No
+                    </th>
+                     <th>
+                        Name
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for person in p reversed%}
+                <tr>
+                    <td>
+                        {{forloop.counter}}
+                    </td>
+                    <td>
+                    <a href="{{person.id}}" class="text-dark p-2">{{person.name}}</a>
+                    </td>
+                    <td>
+                        {{person.desc}}
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Details of {{p.name}}{% endblock %}
+{% block style %}
+{% endblock %}
+{% block content %}
+
+
+  <!--  <table class="table table-dark p-3 mt-3">
+            <thead class="thead-light">
+            <tr>
+                <th>
+                    S.No
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Desc
+                </th>
+                <th>
+                    Img
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        {{p.id}}
+                    </td>
+                    <td>
+                        {{p.name}}
+                    </td>
+                    <td>
+                        {{p.email}}
+                    </td>
+                    <td>
+                        {{p.desc}}
+                    </td>
+                    <td>
+                        <img src="" class="img-fluid img-thumbnail">
+                    </td>
+                </tr>
+            </tbody>
+    </table> -->
+    <div class="container">
+        <div class="row">
+            <img src="{{ p.photo.url }}" class="img-fluid img-thumbnail float-left">
+            <p><span class="text-danger">{{p.name}}</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur cupiditate earum exercitationem harum laborum maxime placeat quaerat unde vero?</p>
+        </div>
+    </div>
+
+{% endblock %}

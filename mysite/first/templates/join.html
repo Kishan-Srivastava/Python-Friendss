@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Details of {{p.name}}{% endblock %}
+{% block style %}
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+    <form method="post" action="join" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{  form.as_p }}
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+    </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>About</title>
+    <style>
+        body{
+            background: url("/media/think.jpg") no-repeat fixed center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="font-weight: bold;margin: auto; padding: 250px 0 250px 0; color: lawngreen; text-align: center; width: 100%;height: 500px">
+        <p class="display-4">Here it all matters.</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, minus?</h3>
+        <a href="index" class="btn btn-outline-success btn-lg">Click Here</a>
+    </div>
+    <div class="container-fluid mb-2 p-1 bg-light">
+        <div class="row display-5 p-3">
+            <div class="col-md-6 text-center">
+                <img src="/media/back.jpeg" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi, consequatur consequuntur corporis deserunt dolores dolorum eum ex exercitationem fugiat harum hic ipsa ipsum iusto minus molestiae molestias natus neque nesciunt nobis odio officiis omnis optio quis quod reprehenderit sit sunt vitae voluptas? Eaque iusto modi praesentium saepe vero.</p>
+                <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" class="btn btn-outline-dark">Learn More</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-2 p-1">
+        <div class="row display-5 p-3 bg-white">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi, consequatur consequuntur corporis deserunt dolores dolorum eum ex exercitationem fugiat harum hic ipsa ipsum iusto minus molestiae molestias natus neque nesciunt nobis odio officiis omnis optio quis quod reprehenderit sit sunt vitae voluptas? Eaque iusto modi praesentium saepe vero.</p>
+                <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" class="btn btn-outline-dark">Learn More</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="/media/think.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white p-3 mt-2">
+        <h3>Copyright &copy; 2018</h3>
+        <h4>Developed and Maintained by <i class="fa fa-user-circle"></i> Kishan Srivastava</h4>
+        <p>All Rights Reserved</p>
+    </footer>
+<script src="{% static 'js/fontawesome-all.js' %}"></script>
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/mdb.min.js' %}"></script>
+<script>
+    $('.carousel').carousel({
+        interval:3000,
+        pause:'hover'
+    });
+</script>
+</body>
+</html>

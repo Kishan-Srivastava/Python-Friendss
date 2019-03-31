@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %}Python Friends{% endblock %}
+{% block style %}
+ul li a{
+text-decoration: none;
+font-size: 20px;
+color: brown;
+font-family: "Comic Sans MS",sans-serif;
+}
+ul li{
+list-style: none;
+}
+{% endblock %}
+{% block content %}
+<div class="container p-3 mb-2">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body p-3 text-primary">
+                     <i class="fa fa-user fa-6x mb-3 text-success"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, beatae blanditiis consequuntur culpa dicta esse, fugit inventore iste modi provident, quibusdam sint sit voluptatum! Dignissimos!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body p-3 text-primary">
+                     <i class="fa fa-code fa-6x mb-3 text-success"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, beatae blanditiis consequuntur culpa dicta esse, fugit inventore iste modi provident, quibusdam sint sit voluptatum! Dignissimos!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body p-3 text-primary">
+                     <i class="fa fa-bomb fa-6x mb-3 text-success"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, beatae blanditiis consequuntur culpa dicta esse, fugit inventore iste modi provident, quibusdam sint sit voluptatum! Dignissimos!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mb-2 p-1 bg-light">
+    <div class="row display-5 p-3">
+        <div class="col-md-6 text-center">
+            <img src="/media/back.jpeg" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi, consequatur consequuntur corporis deserunt dolores dolorum eum ex exercitationem fugiat harum hic ipsa ipsum iusto minus molestiae molestias natus neque nesciunt nobis odio officiis omnis optio quis quod reprehenderit sit sunt vitae voluptas? Eaque iusto modi praesentium saepe vero.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mb-2 p-1">
+    <div class="row display-5 p-3">
+        <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi, consequatur consequuntur corporis deserunt dolores dolorum eum ex exercitationem fugiat harum hic ipsa ipsum iusto minus molestiae molestias natus neque nesciunt nobis odio officiis omnis optio quis quod reprehenderit sit sunt vitae voluptas? Eaque iusto modi praesentium saepe vero.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/media/think.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
